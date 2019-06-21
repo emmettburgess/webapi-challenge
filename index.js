@@ -11,4 +11,10 @@ there is no data on that route, just write some code, you'll sort it out… don'
 I need this code, just don't know where, perhaps should make some middleware, don't worry, be happy
 
 Go code!
-*/
+ ...oof ow... */
+ 
+ const server = require('./server.js');
+
+ server.listen(9090, () => {
+     console.log('Server running on port 9090')
+ });
