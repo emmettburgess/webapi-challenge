@@ -22,6 +22,20 @@ router.get("/", (req, res) => {
     });
 });
 
+router.put("/:id", (req, res) =>
+{
+    const id = req.params.id;
+    const notes = req.body.notes;
+    const description = req.body.description;
+    Actions.update(id, {description, notes})
+    .then(got => {
+        res.status(200).json(got)
+    })
+    .catch(err => {
+        res.status(500).json(err)
+    })
+});
+
 router.get("/:id", validateProjectId, (req, res) => {
     Projects.getProjectActions(req.params.id)
       .then(actions => {

@@ -34,7 +34,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
         A piece of data or info in a system
 
 - [ ] What can the API return to help clients know if a request was successful?
-        a status with a custom json message (404 File not found).
+        a status with a custom json message.
 
 - [ ] How can we partition our application into sub-applications?
         create unique routers with the appropriate architecture and actions built according to specific data
